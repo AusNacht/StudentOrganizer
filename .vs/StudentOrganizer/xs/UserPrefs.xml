@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{27EC76A8-CBD6-41A3-97D8-EAF1875D626D}|Default">
+  <MonoDevelop.Ide.ItemProperties.StudentOrganizer.xTests PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="StudentOrganizer/Controllers/HomeController.cs" Line="7" Column="15" />
+      <File FileName="StudentOrganizer/Views/Home/Index.cshtml" Line="13" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StudentOrganizer" expanded="True">
+            <Node name="StudentOrganizer" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="StudentOrganizer.xTests" expanded="True">
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.StudentOrganizer PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
