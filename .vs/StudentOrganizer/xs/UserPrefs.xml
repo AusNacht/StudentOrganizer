@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{27EC76A8-CBD6-41A3-97D8-EAF1875D626D}|Default">
   <MonoDevelop.Ide.ItemProperties.StudentOrganizer.xTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer/Views/Students/StudentView.cshtml">
     <Files>
       <File FileName="StudentOrganizer/Views/Home/Index.cshtml" Line="30" Column="1" />
       <File FileName="StudentOrganizer/Controllers/HomeController.cs" Line="17" Column="31" />
@@ -9,7 +9,6 @@
       <File FileName="StudentOrganizer/Startup.cs" Line="56" Column="15" />
       <File FileName="StudentOrganizer/Views/StudentTable/EmptyHTMLFile.html" Line="8" Column="1" />
       <File FileName="StudentOrganizer/Views/Students/StudentView.cshtml" Line="18" Column="11" />
-      <File FileName="StudentOrganizer Status" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
