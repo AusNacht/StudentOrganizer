@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "425d972fa8475d9caab52c9c20c202dc01856ffd"
+    "signature": "16a29bf5d3471f041441278e2c3ef32b89241ca2"
   },
   "compilationOptions": {
     "defines": [
@@ -27,7 +27,8 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "bootstrap": "4.3.1"
+          "bootstrap": "4.3.1",
+          "jQuery": "3.4.1"
         },
         "runtime": {
           "StudentOrganizer.dll": {}
@@ -38,11 +39,11 @@
       },
       "bootstrap/4.3.1": {
         "dependencies": {
-          "jQuery": "3.0.0",
+          "jQuery": "3.4.1",
           "popper.js": "1.14.0"
         }
       },
-      "jQuery/3.0.0": {},
+      "jQuery/3.4.1": {},
       "popper.js/1.14.0": {},
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "dependencies": {
@@ -3253,12 +3254,12 @@
       "path": "bootstrap/4.3.1",
       "hashPath": "bootstrap.4.3.1.nupkg.sha512"
     },
-    "jQuery/3.0.0": {
+    "jQuery/3.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-FXANjZia/vux9/ObNiPwh2zNWuzcgHMKXia1OQrviuf0OKPBWB2TBIVAICgtObuzEW+XLyaBEoVuOUlMXy0kNA==",
-      "path": "jquery/3.0.0",
-      "hashPath": "jquery.3.0.0.nupkg.sha512"
+      "sha512": "sha512-r/cbTa9g145W7vnKHO43YEBPIhURzsA8oRlt/0Zvo9t6MmjgCewfdf8+9w7B1S+gI0UZMwdWzBLG7OvzkVSRIQ==",
+      "path": "jquery/3.4.1",
+      "hashPath": "jquery.3.4.1.nupkg.sha512"
     },
     "popper.js/1.14.0": {
       "type": "package",

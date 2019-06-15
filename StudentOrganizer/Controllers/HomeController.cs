@@ -12,6 +12,26 @@ namespace StudentOrganizer.Controllers
     {
         public IActionResult Index()
         {
+            var controller = RouteData.Values["controller"];
+            var action = RouteData.Values["action"];
+            var id = RouteData.Values["id"];
+
+            List<StudentModel> students = new List<StudentModel>();
+            students.Add(
+                new StudentModel
+                {
+                    id          = 1,
+                    firstName   = "Bob",
+                    lastName    = "Samacus",
+                    age         = 31,
+                    status      = "Active"
+                }
+            );
+            var model = new StudentListModel
+            {
+                students = students
+            };
+
             return View();
         }
 

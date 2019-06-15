@@ -1,0 +1,10 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace StudentOrganizer.Models
+{
+    public class StudentListModel
+    {
+        public List<StudentModel> students { get; set; }
+    }
+}
