@@ -28,3 +28,4 @@
 /Users/aaronlathrop/Documents/DevProjects/temp/StudentOrganizer/StudentOrganizer/obj/Debug/netcoreapp2.2/StudentOrganizer.dll
 /Users/aaronlathrop/Documents/DevProjects/temp/StudentOrganizer/StudentOrganizer/obj/Debug/netcoreapp2.2/StudentOrganizer.pdb
 /Users/aaronlathrop/Documents/DevProjects/temp/StudentOrganizer/StudentOrganizer/obj/Debug/netcoreapp2.2/StudentOrganizer.csproj.CopyComplete
+/Users/aaronlathrop/Documents/DevProjects/temp/StudentOrganizer/StudentOrganizer/obj/Debug/netcoreapp2.2/Razor/Views/Student/StudentView.g.cshtml.cs

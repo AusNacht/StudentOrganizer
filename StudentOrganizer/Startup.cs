@@ -56,6 +56,9 @@ namespace StudentOrganizer
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
+                    name: "student",
+                    template: "student/{controller=Student}/{action=StudentView}/{id?}");
+                routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
