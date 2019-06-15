@@ -32,4 +32,7 @@
   <ItemGroup>
     <None Include="wwwroot\css\bootstrap.min.css" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Entities\EmptyClass.cs" />
+  </ItemGroup>
 </Project>
