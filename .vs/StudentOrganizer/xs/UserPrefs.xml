@@ -1,30 +1,35 @@
 ﻿<Properties StartupConfiguration="{27EC76A8-CBD6-41A3-97D8-EAF1875D626D}|Default">
   <MonoDevelop.Ide.ItemProperties.StudentOrganizer.xTests PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer Status">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer/Views/Student/StudentView.cshtml">
     <Files>
-      <File FileName="StudentOrganizer/Controllers/StudentController.cs" Line="37" Column="12" />
-      <File FileName="StudentOrganizer/Services/ValidatorService.cs" Line="18" Column="32" />
-      <File FileName="StudentOrganizer.xTests/Services/ValidatorServiceTest.cs" Line="16" Column="46" />
-      <File FileName="StudentOrganizer Status" />
+      <File FileName="StudentOrganizer/Controllers/HomeController.cs" Line="20" Column="34" />
+      <File FileName="StudentOrganizer/Views/Home/Index.cshtml" Line="39" Column="1" />
+      <File FileName="StudentOrganizer/Views/Shared/_Layout.cshtml" Line="64" Column="13" />
+      <File FileName="StudentOrganizer/Views/Student/StudentView.cshtml" Line="51" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="StudentOrganizer" expanded="True">
             <Node name="StudentOrganizer" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Dao" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Student" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Student" expanded="True">
+                  <Node name="StudentView.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
             <Node name="StudentOrganizer.xTests" expanded="True">
-              <Node name="Services" expanded="True">
-                <Node name="ValidatorServiceTest.cs" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
         </State>

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 using StudentOrganizer.Entities;
 
 namespace StudentOrganizer.Dao

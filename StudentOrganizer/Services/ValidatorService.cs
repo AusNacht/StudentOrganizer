@@ -15,10 +15,7 @@ namespace StudentOrganizer.Services
             {
                 result = !required;
             }
-            else if (incoming.Length <= maxLength)
-            {
-                result = true;
-            }
+            else result |= incoming.Length <= maxLength;
 
             return result;
         }

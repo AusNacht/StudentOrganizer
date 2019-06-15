@@ -4,13 +4,15 @@
 
 <div class="row">
     <div class="col-12">
-        <h1 class="display-2">Welcome to Student Organizer</h1>
+        <h3 class="display-3">Welcome to Student Organizer</h3>
+        <hr />
     </div>
 </div>
-<form> @*<form method="post">*@
+<form>
+    @*<form method="post">*@
     <div class="row mt-3">
         <div class="col-12">
-            <h4 class="display-2">Add Students</h4>
+            <h5>Add Students</h5>
         </div>
     </div>
     <div class="row">
@@ -24,17 +26,14 @@
 
     <div class="row mt-1">
         <div class="col-4">
-            <a class="btn btn-primary" asp-controller="Home" asp-action="UploadStudents">Load Students</a>
+            <a class="btn btn-primary" asp-controller="Home" asp-action="UploadStudents">Upload Students</a>
             @*<a type="button" class="btn btn-primary" asp-controller="Home" asp-action="UploadStudents">Load Students</a>*@
-            <input type="submit" value="Load Students" />
+            @*<input type="submit" value="Load Students" />*@
+        
         </div>
-    </div>
-
-    <div class="row">
         <div class="col-4">
-            <a asp-controller="StudentController" asp-action="StudentView"></a>
+            <button class="btn btn-primary" onclick="Test()"></button>
         </div>
     </div>
 </form>
 
-<script 

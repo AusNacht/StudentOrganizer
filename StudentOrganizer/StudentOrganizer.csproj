@@ -11,10 +11,10 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
     <PackageReference Include="bootstrap" Version="4.3.1" />
     <PackageReference Include="jQuery" Version="3.4.1" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
-    <PackageReference Include="EntityFramework" Version="6.2.0" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
     <PackageReference Include="EntityFramework.SqlServerCompact" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="EPPlus" Version="4.5.3.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,13 +24,19 @@
     <Folder Include="Entities\" />
     <Folder Include="Dao\" />
     <Folder Include="Codes\" />
+    <Folder Include="wwwroot\lib\datatables\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\css\bootstrap.min.css" />
     <Content Remove="wwwroot\js\jquery-3.4.1.min.js" />
+    <Content Remove="wwwroot\js\datatables.min.js" />
+    <Content Remove="wwwroot\lib\datatables\datatables.min.js" />
+    <Content Remove="wwwroot\lib\datatables\datatables.min.css" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\lib\datatables\datatables.min.js" />
+    <None Include="wwwroot\lib\datatables\datatables.min.css" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Entities\EmptyClass.cs" />

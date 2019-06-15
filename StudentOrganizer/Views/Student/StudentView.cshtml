@@ -6,13 +6,13 @@
 
 <div class="row">
     <div class="col-12">
-        <h1 class="display-2">Students</h1>
+        <h3 class="display-3">Students</h3>
     </div>
 </div>
 
 <div class="row mt-5">
     <div class="col-12">
-        <table class="table">
+        <table id="studentTable" class="table">
             <thead>
                 <tr>
                     <th scope="col">ID</th>
@@ -23,25 +23,27 @@
                 </tr>
             </thead>
             <tbody>
-                @if(Model.Students != null){
-                    @foreach (var item in Model.Students) {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Id)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.FirstName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.LastName)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Age)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Status)
-                        </td>
-                    </tr>
+                @if (Model.Students != null)
+                {
+                    @foreach (var item in Model.Students)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Id)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.FirstName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Age)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Status)
+                            </td>
+                        </tr>
                     }
                 }
             </tbody>
@@ -49,12 +51,15 @@
     </div>
 </div>
 
-<script>function openSpreadsheet() {
-    console.log(document.getElementById("exampleFormControlFile1").value);
-    @*if (
-        typeof $(this).val() !== undefined
-        && $(this).val() !== ''
-    ) {
-        console.log("yay");
-    }*@
-}</script>
+
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="~/lib/datatables/datatables.min.js"></script>
+<script>$(document).ready(function () {
+        $('#studentTable').DataTable({
+            "lengthMenu": [[10, 25, 50], [10, 25, 50]]
+        });
+    });
+    function Test() {
+        console.log($("#exampleFormControlFile1").val());
+    }</script>
