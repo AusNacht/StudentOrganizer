@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Xunit;
 using StudentOrganizer.Services;
+using StudentOrganizer.Codes;
 
 namespace StudentOrganizer.xTests
 {
@@ -9,10 +10,8 @@ namespace StudentOrganizer.xTests
     {
         private ValidatorService _validatorService;
 
-        private static readonly List<String> STRING_VALID_LIST1 = new List<String>(new string[] { "ASDF", "qwerwerty", "1234" });
-        private static readonly List<String> STRING_VALID_LIST2 = new List<String>(new string[] { "ASDF", "qwerwerty", "1234" });
-        private static readonly List<String> STRING_EMPTY_LIST1 = new List<String>(new string[] { "", null });
-        private static readonly List<String> STRING_EMPTY_LIST2 = new List<String>(new string[] { "", null });
+        private static readonly List<String> STRING_VALID_LIST = new List<String>(new string[] { "ASDF", "qwerwerty", "1234" });
+        private static readonly List<String> STRING_EMPTY_LIST = new List<String>(new string[] { "", null });
 
         private static readonly List<String> INT_SUCCESS_LIST    = new List<String>(new string[] { "" });
         private static readonly List<String> INT_FAIL_LIST       = new List<String>(new string[] { "" });
@@ -27,7 +26,7 @@ namespace StudentOrganizer.xTests
             _validatorService = new ValidatorService();
 
             // Strings with valid data and under max length are valid
-            foreach(String test in STRING_VALID_LIST1)
+            foreach(String test in STRING_VALID_LIST)
             {
                 Assert.True(_validatorService.validateString(test, test.Length, false));
             }
@@ -39,7 +38,7 @@ namespace StudentOrganizer.xTests
             _validatorService = new ValidatorService();
 
             // Strings with valid data and over the max length are invalid
-            foreach (String test in STRING_VALID_LIST2)
+            foreach (String test in STRING_VALID_LIST)
             {
                 Assert.False(_validatorService.validateString(test, test.Length - 1, false));
             }
@@ -51,7 +50,7 @@ namespace StudentOrganizer.xTests
             _validatorService = new ValidatorService();
 
             // Strings with null or empty values and aren't required are valid
-            foreach (String test in STRING_EMPTY_LIST1)
+            foreach (String test in STRING_EMPTY_LIST)
             {
                 Assert.True(_validatorService.validateString(test, 1, false));
             }
@@ -63,7 +62,7 @@ namespace StudentOrganizer.xTests
             _validatorService = new ValidatorService();
 
             // Strings with null or empty values and are required are invalid
-            foreach (String test in STRING_EMPTY_LIST2)
+            foreach (String test in STRING_EMPTY_LIST)
             {
                 Assert.False(_validatorService.validateString(test, 1, true));
             }

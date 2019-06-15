@@ -1,27 +1,28 @@
-﻿<Properties StartupConfiguration="{27EC76A8-CBD6-41A3-97D8-EAF1875D626D}|Default">
+﻿<Properties StartupConfiguration="{41C37365-C3B9-49D7-A6AC-C7E5DADB06EE}|Unit Tests">
   <MonoDevelop.Ide.ItemProperties.StudentOrganizer.xTests PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="StudentOrganizer Status">
     <Files>
-      <File FileName="StudentOrganizer/Views/Home/Index.cshtml" Line="9" Column="7" />
-      <File FileName="StudentOrganizer/Views/Student/StudentView.cshtml" Line="11" Column="7" />
+      <File FileName="StudentOrganizer/Codes/StatusCodes.cs" Line="10" Column="59" />
+      <File FileName="StudentOrganizer/Services/ValidatorService.cs" Line="42" Column="19" />
+      <File FileName="StudentOrganizer/Entities/Student.cs" Line="5" Column="6" />
+      <File FileName="StudentOrganizer/Views/Home/Index.cshtml" Line="34" Column="76" />
+      <File FileName="StudentOrganizer/Views/Student/StudentView.cshtml" Line="33" Column="74" />
+      <File FileName="StudentOrganizer/Controllers/StudentController.cs" Line="13" Column="41" />
       <File FileName="StudentOrganizer Status" />
-      <File FileName="StudentOrganizer/Controllers/StudentController.cs" Line="18" Column="61" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="StudentOrganizer" expanded="True">
+          <Node name="StudentOrganizer" expanded="True" selected="True">
             <Node name="StudentOrganizer" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Entities" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
-                <Node name="Shared" expanded="True" />
-                <Node name="Student" expanded="True">
-                  <Node name="StudentView.cshtml" selected="True" />
-                </Node>
+                <Node name="Student" expanded="True" />
               </Node>
             </Node>
             <Node name="StudentOrganizer.xTests" expanded="True">

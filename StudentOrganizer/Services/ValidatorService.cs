@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using StudentOrganizer.Services.Interfaces;
+using StudentOrganizer.Codes;
 
 namespace StudentOrganizer.Services
 {
     public class ValidatorService : IValidatorService
     {
-        // Readonly  variables
-        private static readonly List<String> STATUS_OPTIONS = new List<String>( new string[] { "Active", "Inactive", "Hold" } );
-
-
         public bool validateString(String incoming, int maxLength, bool required)
         {
             bool result = false;
@@ -42,7 +39,7 @@ namespace StudentOrganizer.Services
 
         public bool validateStatus(String incoming)
         {
-            return STATUS_OPTIONS.Contains(incoming);
+            return Status.STATUS_OPTIONS.Contains(incoming);
         }
     }
 }

@@ -12,11 +12,6 @@ namespace StudentOrganizer.Controllers
     {
         public IActionResult StudentView()
         {
-            //Take in the excel spreadsheet
-            //Call service to turn it into data
-            //Call validate to validate the data
-            //Return it to the View via the StudentListModel
-
             var controller = RouteData.Values["controller"];
             var action = RouteData.Values["action"];
             var id = RouteData.Values["id"];
@@ -25,16 +20,16 @@ namespace StudentOrganizer.Controllers
             students.Add(
                 new StudentModel
                 {
-                    id = 1,
-                    firstName = "Bob",
-                    lastName = "Samacus",
-                    age = 31,
-                    status = "Active"
+                    Id = 1,
+                    FirstName = "Bob",
+                    LastName = "Samacus",
+                    Age = 31,
+                    Status = "Active"
                 }
             );
             var model = new StudentListModel
             {
-                students = students
+                Students = students
             };
 
             return View(model);

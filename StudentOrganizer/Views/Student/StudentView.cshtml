@@ -9,6 +9,7 @@
         <h1 class="display-2">Students</h1>
     </div>
 </div>
+
 <div class="row mt-5">
     <div class="col-12">
         <table class="table">
@@ -22,30 +23,31 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var item in Model.students) {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.id)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.firstName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.lastName)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.age)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.status)
-                    </td>
-                </tr>
+                @if(Model.Students != null){
+                    @foreach (var item in Model.Students) {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FirstName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.LastName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Age)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                    </tr>
+                    }
                 }
             </tbody>
         </table>
     </div>
 </div>
-
 
 <script>function openSpreadsheet() {
     console.log(document.getElementById("exampleFormControlFile1").value);

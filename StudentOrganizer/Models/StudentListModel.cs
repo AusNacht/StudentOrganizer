@@ -5,6 +5,6 @@ namespace StudentOrganizer.Models
 {
     public class StudentListModel
     {
-        public List<StudentModel> students { get; set; }
+        public List<StudentModel> Students { get; set; }
     }
 }

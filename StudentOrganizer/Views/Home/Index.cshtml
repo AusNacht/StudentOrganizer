@@ -8,10 +8,15 @@
     </div>
 </div>
 <form>
+    <div class="row">
+        <div class="col-12">
+            <h4 class="display-2">Add Students</h4>
+        </div>
+    </div>
     <div class="row mt-3">
         <div class="col-8">
             <div class="form-group">
-                <label for="exampleFormControlFile1">Please select the xlsx file to get started: </label>
+                <label for="exampleFormControlFile1">Please select the xlsx file: </label>
                 <input type="file" class="form-control-file" id="exampleFormControlFile1">
             </div>
         </div>
@@ -19,7 +24,14 @@
 
     <div class="row mt-1">
         <div class="col-4">
-            <button type="button" class="btn btn-primary" onclick="openSpreadsheet()">Load Students</button>
+            <a class="btn btn-primary" asp-controller="Home" asp-action="UploadStudents">Load Students</a>
+            @*<a type="button" class="btn btn-primary" asp-controller="Home" asp-action="UploadStudents">Load Students</a>*@
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <a asp-controller="StudentController" asp-action="StudentView"></a>
         </div>
     </div>
 </form>

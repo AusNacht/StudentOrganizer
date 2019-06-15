@@ -15,6 +15,18 @@ namespace StudentOrganizer.Controllers
             return View();
         }
 
+        [ActionName("UploadStudents")]
+        [HttpGet]
+        public IActionResult UploadStudents()//(string name)
+        {
+            //Take in the excel spreadsheet
+            //Call service to turn it into data
+            //Call validate to validate the data
+            //Return it to the View via the StudentListModel
+
+            return RedirectToAction("StudentView", "Student");
+        }
+
         public IActionResult Privacy()
         {
             return View();
