@@ -13,8 +13,7 @@
     <PackageReference Include="jQuery" Version="3.4.1" />
     <PackageReference Include="System.Linq" Version="4.3.0" />
     <PackageReference Include="EntityFramework.SqlServerCompact" Version="6.2.0" />
-    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
-    <PackageReference Include="EPPlus" Version="4.5.3.1" />
+    <PackageReference Include="EPPlus.Core" Version="1.5.4" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +24,8 @@
     <Folder Include="Dao\" />
     <Folder Include="Codes\" />
     <Folder Include="wwwroot\lib\datatables\" />
+    <Folder Include="wwwroot\Content\" />
+    <Folder Include="DummyData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\css\bootstrap.min.css" />
@@ -32,11 +33,13 @@
     <Content Remove="wwwroot\js\datatables.min.js" />
     <Content Remove="wwwroot\lib\datatables\datatables.min.js" />
     <Content Remove="wwwroot\lib\datatables\datatables.min.css" />
+    <Content Remove="wwwroot\Content\Sample Data.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\css\bootstrap.min.css" />
     <None Include="wwwroot\lib\datatables\datatables.min.js" />
     <None Include="wwwroot\lib\datatables\datatables.min.css" />
+    <None Include="wwwroot\Content\Sample Data.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Entities\EmptyClass.cs" />

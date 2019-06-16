@@ -1,10 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using OfficeOpenXml;
 using StudentOrganizer.Models;
+using StudentOrganizer.Services;
+using StudentOrganizer.Services.Interfaces;
 
 namespace StudentOrganizer.Controllers
 {
@@ -17,12 +22,21 @@ namespace StudentOrganizer.Controllers
 
         [ActionName("UploadStudents")]
         [HttpGet]
-        public IActionResult UploadStudents()//(string name)
+        public IActionResult UploadStudents(string path = "~/Content/SampleData.xlsx")
         {
-            //Take in the excel spreadsheet
-            //Call service to turn it into data
-            //Call validate to validate the data
-            //Return it to the View via the StudentListModel
+            // Turn into datatable
+
+            // FIXME: I am using a mac and there's most people use EPPlus to convert an XLSX file to a DataTable:
+            //      a) ToDataTable method
+            //      b) package.Workbooks.Workbooks.First
+            //      c) package.Workbooks.Workbook[0]
+            //      d) package.Workbooks.Workbook[1]
+            //      e) package.Workbooks.Workbook["Sheet1"]
+            // I tried all these solutions and several others. I left the converter I wrote so you could see what I planned on doing.
+
+            // FileInfo fi = new FileInfo(path);
+            // ExcelPackage package = new ExcelPackage(fi);
+            // DataTable Dt = ToDataTable(package);
 
             return RedirectToAction("StudentView", "Student");
         }

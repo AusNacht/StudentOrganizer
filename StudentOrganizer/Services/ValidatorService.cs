@@ -2,11 +2,56 @@
 using System.Collections.Generic;
 using StudentOrganizer.Services.Interfaces;
 using StudentOrganizer.Codes;
+using StudentOrganizer.Models;
 
 namespace StudentOrganizer.Services
 {
     public class ValidatorService : IValidatorService
     {
+        public List<string> validateStudents(List<StudentModel> students)
+        {
+            List<string> errors = new List<string>();
+
+            foreach(StudentModel student in students)
+            {
+                errors.AddRange(validateStudent(student));
+            }
+
+            return errors;
+        }
+
+        public List<string> validateStudent(StudentModel student)
+        {
+            List<string> errors = new List<string>();
+
+            if (!this.validateInt(student.Id, false))
+            {
+                errors.Add("Invalid ID");
+            }
+
+            if (!this.validateString(student.FirstName, 50, true))
+            {
+                errors.Add("Invalid First Name");
+            }
+
+            if (!this.validateString(student.FirstName, 50, true))
+            {
+                errors.Add("Invalid Last Name");
+            }
+
+            if(!this.validateInt(student.Age, true))
+            {
+                errors.Add("Invalid Age");
+            }
+
+            if (!this.validateStatus(student.Status))
+            {
+                errors.Add("Invalid Status");
+            }
+
+            return errors;
+        }
+
         public bool validateString(String incoming, int maxLength, bool required)
         {
             bool result = false;
@@ -20,18 +65,13 @@ namespace StudentOrganizer.Services
             return result;
         }
 
-        //FIXME: need to validate Int, are we getting as strings or something
-        public bool validateInt(String incoming, bool mustBePositive, bool required)
+        public bool validateInt(String incoming, bool mustBePositive)
         {
-            bool result = false;
+            int result;
+            bool success = Int32.TryParse(incoming, out result);
 
-            if (String.IsNullOrEmpty(incoming) && required)
-            {
-                result = false;
-            }
-            //Int32.TryParse(incoming);
-
-            return result;
+            //Success if int and if it's positive or it's not required to be positive
+            return success   && ( (result > 0)    || !mustBePositive );
         }
 
         public bool validateStatus(String incoming)
